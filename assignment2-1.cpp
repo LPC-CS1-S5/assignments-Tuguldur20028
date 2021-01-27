@@ -12,7 +12,7 @@ int main()
   days = 18900;
   cout <<"We have made a long journey of" << miles << "miles.\n";
   cout <<"Our checking account balance is" << checking<<"\n";
-  cout <<"\n About" << days << "Days ago Columbus";
+  cout <<"\n About" << days << "days ago Columbus";
   cout <<"stood on this spot.\n";
 
   return 0;
