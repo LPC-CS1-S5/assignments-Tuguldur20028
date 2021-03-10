@@ -36,7 +36,7 @@ int main()
 { 
     
     int L = 1; 
-    int R = 10; 
+    int R = 100; 
   
     
     primeInRange(L, R); 
