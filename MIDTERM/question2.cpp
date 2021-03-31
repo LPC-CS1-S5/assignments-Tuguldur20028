@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -19,12 +20,14 @@ int main()
     cout << " Error to open\n";
     exit(0);
   }
-  getline (ifs,line);
+//   getline (ifs,line);
+  ifs >> line;
   numstudents = stoi(line);
-  cout << numstudents << "n\";
+  cout << numstudents << "\n";
 
   for (n = 0; n < numstudents; n++){
-    getline (ifs,line);
+	// ifs >> line;
+
     string nmae;
     int score1 = 0, score2 = 0, total = 0;
     double avg = 0;

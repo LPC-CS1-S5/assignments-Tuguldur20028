@@ -36,9 +36,9 @@ int isPrime(){
   bool flag =0;
  
   ofs.open("numbers.txt");
-  //  for (i=0; (i=n); i++){
+  
    for (i=0; (i<=n); i++){
-    //  getRdnum();
+
      rdnum = getRdnum();
      for (j=2; j < rdnum/2; j++){
        flag = 0;

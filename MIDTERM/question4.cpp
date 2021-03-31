@@ -22,7 +22,7 @@ void  getRdnum(int n2)
 {
   int num;
   srand(time(NULL));
-  num = rand() % 100 + n1;
+  num = rand() % 100 + n2;
   cout << num;
 }
 void getRdnum(int n1, int n2)
