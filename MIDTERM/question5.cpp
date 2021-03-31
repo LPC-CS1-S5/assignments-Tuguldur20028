@@ -9,26 +9,32 @@ int isSame(int, int);
 int Division(int, int);
 void filewrite(ofstream, int);
 
-
-  }
-
-  //check if num1, num2 are the same
-  // ifs.open("question5.txt");
-  ifstream ifs;
-  ifs.open ("question5.txt");
-  if (ifs.fail()){
-    cout << " Error to open\n";
-    exit(0);
-  }
-  getInput(num1,num2);
-
-
-
 int main()
 {
-int getInput(void) 
-  cout << "Enter two Numbers :: ";
-  cin >> num1 >> num2;
-  cout << num1 << "/" << num2 << " = "<< num1/num2 << endl;
+  int num1, num2;
+  ofstream ofs;
+  ofs.open("question5.txt");
 }
-return 0;
+{
+  getInput(num1, num2);
+  if(isSame(num1,num2))
+    break;
+  intDivision(num1, num2);
+  filewrite(ofs, division);
+}
+void getInput(int&num1, int&num2){
+  cout << "enter two integers" << endl;
+  cin >> num1 >> num2;
+}
+int isSame(int&num1, int&num2);{
+  if(num1 > num2)
+  result = num1/num2
+  else(num1=num2)
+  result = break
+}
+  
+
+  
+
+
+
