@@ -14,7 +14,7 @@ int main()
   int num1, num2;
   ofstream ofs;
   ofs.open("question5.txt");
-}
+} while()
 {
   getInput(num1, num2);
   if(isSame(num1,num2))
@@ -23,16 +23,26 @@ int main()
   filewrite(ofs, division);
 }
 void getInput(int&num1, int&num2){
-  cout << "enter two integers" << endl;
+  cout << "Please enter two integers" << endl;
   cin >> num1 >> num2;
-}
-int isSame(int&num1, int&num2);{
+} while();{
+int isSame(int&num1, int&num2)
+  int result;
   if(num1 > num2)
-  result = num1/num2
-  else(num1=num2)
-  result = break
+  result = num1/num2;
+  else(num1=num2);
+  break;
+   
 }
-  
+
+  int Division(int&num1, int&num2){
+    int result;
+    if(num1 > num2)
+  result = num1/num2;
+  else(num2/num1);
+
+  return 0;
+}
 
   
 
