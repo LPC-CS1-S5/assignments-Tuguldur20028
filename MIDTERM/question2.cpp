@@ -28,7 +28,7 @@ int main()
   for (n = 0; n < numstudents; n++){
 	// ifs >> line;
 
-    string nmae;
+    string name;
     int score1 = 0, score2 = 0, total = 0;
     double avg = 0;
     int pos = 0;

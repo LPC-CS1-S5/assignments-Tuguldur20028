@@ -4,13 +4,12 @@
 #include <ctime>
 using namespace std;
 
+void getInput (int&, int&);
+int isSame(int, int);
+int Division(int, int);
+void filewrite(ofstream, int);
 
-  int num1, int num2;
-  int isSame;
-  int Division;
-  srand(time(0));
-  int isSame(){
-    
+
   }
 
   //check if num1, num2 are the same
