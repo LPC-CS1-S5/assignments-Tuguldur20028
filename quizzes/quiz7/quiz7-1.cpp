@@ -4,7 +4,7 @@ using namespace std;
 const int N = 10;
 
 int main(){
-  int number [N] = {10, 15, 20, 25, 0, 40, 35, 45, 30, 5};
+  int number [N] = {10, 15, 0, -25, 19, 20, 25, 30, 45, 20};
   for(int i = 0; i<N; i++){
     if(i>0 && i<9){//checks if the index is 1-8
       if(abs(number[i]-number[i+1]<10 && abs (number [i]-number[i-1])<10)){
