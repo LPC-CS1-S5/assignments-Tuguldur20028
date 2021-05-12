@@ -41,3 +41,23 @@ bool 	idcheck(char email[])
      return true;
  
 }
+bool	domaincheck(char email[])
+{ int start;
+  int length;
+  int i;
+  char domain[] = ".org,.com, .edu, .net, .gov";
+  string id;
+  int found = 0;
+  start = 0;
+  char *comp; 
+  length = strlen(email);
+  i = length - 1;
+  do{ 
+    if(email[i] == '.')
+    break;
+  } while( i -- > 0);
+  comp = strstr(domain, email + i + 1);
+  if ( comp != NULL)
+    return true;
+  return false;
+}
