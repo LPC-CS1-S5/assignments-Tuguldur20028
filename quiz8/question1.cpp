@@ -19,4 +19,14 @@ int main()
     exit(0);
   }
   getline (ifs,s1);
-  
+
+   start = 0 ;
+	while ((found = s1.find("th", start)) != string::npos) {
+		delimiter = s1.substr(start, found-start);
+		
+		start = found + 1;
+		cnt += 1;
+    
+	}
+   cout << " Count Equals " << cnt << endl;
+}
