@@ -27,4 +27,28 @@ int main(){
   cout << "welcome to the programm reads employee imformation";
   cout << "listing the employee who's salaries are above 100000.";
   cout << "Find the employee that works in the Computer department.";
-  
+
+  	filewrite();
+	employeestruct(e);
+ numRecords  = 1;
+  finddepartment(e, numRecords, department);
+  findsalary( e,  numRecords, salary);
+}
+
+void filewrite(){
+  ofstream ofs;
+  employeeRecords er;
+
+  ofs.open("employee.txt");
+  er.id =999999;
+  er.name = "Tuguldur Odonbaatar";
+  er.salary = 250000;
+  er.department = "Computer";
+  er.date = "May 18 2021";
+
+  ofs << er.id << endl;
+	ofs << er.name << endl;
+	ofs << er.salary << endl;
+	ofs << er.department << endl;
+	ofs << er.date << endl;
+
