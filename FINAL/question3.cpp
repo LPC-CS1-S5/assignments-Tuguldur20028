@@ -8,3 +8,17 @@ int numbers1[SIZE1] = {2, 3, 5, 9, 10};
 int numbers2[SIZE2] = {1, 2, 3, 5, 9, 10, 11, 13, 15, 17};
 int main()
 {
+   for (int i=0; i < 5; i++){
+   for (int j =0; j <10; j++){
+   
+      if (numbers1[i] != numbers2[j])
+      j++;
+      else if (numbers1[i] != numbers2[j])
+        i++;
+      else if (i == 4)
+       cout << "the two arrays are equal"; 
+            
+
+   }
+   }
+}
