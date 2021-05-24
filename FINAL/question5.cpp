@@ -19,4 +19,20 @@ struct Grade{
       Scores score;
        };
  Grade g;
- 
+ void printGrades(Grade);
+int main(){
+
+
+    ifstream    ifso;
+    ofstream    ofso;
+   
+    string    	 buf, field;
+    int   		 i=0, fcnt=0;
+    stringstream ss;
+
+    ifso.open("grades.txt", fstream::in);
+    ofso.open("grades.bin", fstream::out);
+    if (!ifso || !ofso ){
+   	 cout << "Open Error\n";
+   	 exit(0);
+}
