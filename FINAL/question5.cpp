@@ -54,3 +54,20 @@ int main(){
    					 break;
    		 }
    		 fcnt = ++fcnt % 5;
+         }
+   	 ss.clear();
+   	 ofso.write((char *)&g, sizeof(g));
+   	 cout << i << "::" << sizeof(g) << " bytes writing " ;
+   	 printGrades(g);
+   	 i++;
+    }
+
+}
+void    	 printGrades(Grade g)
+{
+   	 cout << setw(10) << g.first << "\t";
+   	 cout << setw(10) << g.last << "\t";
+   	 cout << setw(8) << g.ssn << "\t";
+   	 cout << setw(10) << g.sc[N]<< "\t\t";
+   
+}
