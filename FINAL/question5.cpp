@@ -36,3 +36,21 @@ int main(){
    	 cout << "Open Error\n";
    	 exit(0);
 }
+ while(ifso >> buf) {
+   	 ss << buf;
+   	 while(getline(ss, field, ',')) {
+   		 switch(fcnt){
+   			 case 0:
+   					 g.last = field;
+   					 break;
+   			 case 1:
+   					 g.first = field;
+   					 break;
+   			 case 2:
+   					 g.ssn = stoi(field);
+   					 break;
+   			 case 3:
+   					 g.score.sc[0] = stoi(field);
+   					 break;
+   		 }
+   		 fcnt = ++fcnt % 5;
